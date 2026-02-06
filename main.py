@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 import random
 import re # Використовуйте модуль re для регулярних виразів для видалення непотрібних символів.
 
-# Завдання 1
+# ============================================= Завдання 1
 # current_date = Поточна дата
 def get_days_from_today(date, current_date = datetime.today()):
     try:
@@ -30,7 +30,7 @@ except Exception as e:
     print(e)
 
 
-# Завдання 2
+# ============================================= Завдання 2
 def get_numbers_ticket(min, max, quantity):
     # Валідність вхідних даних: функція повинна перевіряти коректність параметрів.
     if min < 1: raise ValueError('min is less than 1')
@@ -69,7 +69,7 @@ try:
 except Exception as e:
     print(e)
 
-# Завдання 3
+# ============================================= Завдання 3
 def normalize_phone(phone_number):
     # Видаліть всі символи, крім цифр та '+', з номера телефону.
     pattern = r'\d+'
@@ -100,7 +100,7 @@ try:
 except Exception as e:
     print(e)
 
-# Завдання 4
+# ============================================= Завдання 4
 def get_upcoming_birthdays(users, today = datetime.today().date()):
     ret_dict = list()
     for user in users:
