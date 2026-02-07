@@ -55,10 +55,12 @@ def main():
 
     print (f'{'='*8} task #4 checking' )
     users = [
-        {"name": "John Doe", "birthday": "1985.01.23"},
-        {"name": "Jane Smith", "birthday": "1990.01.27"},
+        {"name": "John Doe", "birthday": "1985.02.23"},
+        {"name": "Jane Smith", "birthday": "1990.02.27"},
         {"name": "Jane Morgan", "birthday": "1990.08.27"},
-        {"name": "Jane Stanley", "birthday": "1990.01.22"}
+        {"name": "Larysa Pysmenna", "birthday": "1914.02.11"},
+        {"name": "Lev Pysarzhevskyi", "birthday": "1874.02.14"},
+        {"name": "Pavlo Biloshytskyi", "birthday": "1937.02.07"}
     ]
 
     upcoming_birthdays = get_upcoming_birthdays(users)
