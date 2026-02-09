@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta, date
-from typing import List, Dict, Any
+from typing import List, Dict
 import random
 import re
 
@@ -18,7 +18,7 @@ def get_days_from_today(date_str: str) -> int:
     """
     try:
         in_date = datetime.strptime(date_str, "%Y-%m-%d")
-    except ValueError as e:
+    except ValueError:
         raise ValueError(f'Inccorrect date value => {date_str}')
 
     return datetime.today().toordinal() - in_date.toordinal()
@@ -29,7 +29,7 @@ def get_numbers_ticket(min_num: int, max_num: int, quantity: int) -> List[int]:
     """Генерувати унікальні випадкові номери лотереї.
     
     Args:
-        min_num: Мінімальне число діапазону,більше за 1
+        min_num: Мінімальне число діапазону, більше за 1
         max_num: Максимальне число діапазону, менше за 1000
         quantity: Кількість унікальних номерів для генерування
         
