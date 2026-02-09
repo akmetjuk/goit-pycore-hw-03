@@ -6,13 +6,13 @@ import re
 # ============================================= Завдання 1
 def get_days_from_today(date_str: str) -> int:
     """Обчислити кількість днів від заданої дати до сьогодні.
-    
+
     Args:
         date_str: Дата у форматі 'YYYY-MM-DD'
-        
+
     Returns:
         Кількість днів
-        
+
     Raises:
         ValueError: Якщо формат дати невірний
     """
@@ -27,15 +27,15 @@ def get_days_from_today(date_str: str) -> int:
 # ============================================= Завдання 2
 def get_numbers_ticket(min_num: int, max_num: int, quantity: int) -> List[int]:
     """Генерувати унікальні випадкові номери лотереї.
-    
+
     Args:
         min_num: Мінімальне число діапазону, більше за 1
         max_num: Максимальне число діапазону, менше за 1000
         quantity: Кількість унікальних номерів для генерування
-        
+
     Returns:
         Відсортований список унікальних номерів
-        
+
     Raises:
         ValueError: Якщо параметри невалідні
     """
@@ -58,13 +58,13 @@ def get_numbers_ticket(min_num: int, max_num: int, quantity: int) -> List[int]:
 # ============================================= Завдання 3
 def normalize_phone(phone_number: str) -> str:
     """Нормалізувати номер телефону та додати префікс +38.
-    
+
     Args:
         phone_number: Телефонний номер з будь-якими символами
-        
+
     Returns:
         Нормалізований номер у форматі +38XXXXXXXXXX
-        
+
     Raises:
         ValueError: Якщо не вдалося виділити 10-значний номер
     """
@@ -80,10 +80,10 @@ def normalize_phone(phone_number: str) -> str:
 # ============================================= Завдання 4
 def get_upcoming_birthdays(users: List[Dict[str, str]]) -> List[Dict[str, str]]:
     """Отримати список користувачів з днями народження на наступному тижні.
-    
+
     Args:
         users: Список словників з ключами 'name' та 'birthday' (формат 'YYYY.MM.DD')
-        
+
     Returns:
         Список словників з ключами 'name' та 'congratulation_date'
     """
